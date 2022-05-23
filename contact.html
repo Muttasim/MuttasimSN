@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <nav class="topnav" id="myTopnav">
+        <a href="./index.html"><img src="./images/logo.png" alt="logo" width="40" height="20"></a>
+        <a href="#schools">School</a>
+        <a href="contact.html" class="active">Contact Us</a>
+        <a href="about.html">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+    <!-- nav ends -->
+    <form>
+        <div class="form-control">
+            <label for="name">Name</label>
+            <div class="input-icons">
+                <i class="fa fa-user icon"></i>
+                <input type="text" placeholder="Enter your Name" id="name" required>
+            </div>
+        </div>
+        <div class="form-control">
+            <label for="phone Number">Phone Number</label>
+            <div class="input-icons">
+                <i class="fa fa-phone icon" aria-hidden="true"></i>
+                <input type="text" placeholder="Enter your Phone Number" id="phone-num" required>
+            </div>
+        </div>
+        <div class="form-control">
+            <label for="email">Email</label>
+            <div class="input-icons">
+                <i class="fa fa-envelope icon" aria-hidden="true"></i>
+                <input type="email" placeholder="Enter your Email" id="email" required>
+            </div>
+        </div>
+
+        <div>
+            <label for="message">Message</label>
+            <textarea name="Your question" id="text"></textarea>
+        </div>
+        <button id="submit">Submit</button>
+    </form>
+    <!-- footer -->
+    <footer>
+        <h4>Muttasim Schools Navigator &copy; 2022 <a href="#">Contact Us</a>
+            <a href="#">Terms and Condition</a> </h4>
+
+    </footer>
+    <!-- footer ends -->
+
+
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

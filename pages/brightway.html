@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrightWay International Academy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pages.css">
+
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <nav class="topnav" id="myTopnav">
+        <a href="../index.html"><img src="../images/logo.png" alt="logo" width="40" height="20"></a>
+        <a href="#schools" class="active">School</a>
+        <a href="./contact.html">Contact Us</a>
+        <a href="./about.html">About Us</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars" aria-hidden="true"></i> </a>
+    </nav>
+    <!-- nav ends -->
+    <main>
+        <!-- slideshow -->
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="../images/b4.png" style="width:100%">
+                <div class="text">Primary</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="../images/b7.png" style="width:100%">
+                <div class="text">Junior school</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="../images/b8.png" style="width:100%">
+                <div class="text">Senior school</div>
+            </div>
+
+        </div>
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <!-- slideshow ends -->
+        <!-- middle-container -->
+        <div class="middle-container">
+            <img src="../images/b4.png" alt="Primary">
+            <img src="../images/b7.png" alt="Junior school">
+            <img src="../images/b8.png" alt="Senior school">
+        </div>
+        <!-- middle-container ends -->
+        <!-- bottom-container -->
+        <div class="bottom-container">
+            <h2>Details about BrightWay International Academy</h2>
+            <h4>Name: Brightway International Academy</h4>
+            <h4>Motto: </h4>
+            <h4>Established Year: 19th September, 2009</h4>
+            <h4>Address: </h4>
+            <h4>Website: </h4>
+            <h4>Email Address:</h4>
+            <h4>Contact No:</h4>
+            <h4>Mission: </h4>
+            <h4>Vision:</h4>
+            <h4>Message:</h4>
+        </div>
+    </main>
+    <footer>
+        <h4>Muttasim Schools Navigator &copy; 2022 <a href="#">Contact Us</a>
+            <a href="#"></i>Terms and Condition</a> </h4>
+    </footer>
+
+    <script src="../index.js"></script>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+
+
+</html>
